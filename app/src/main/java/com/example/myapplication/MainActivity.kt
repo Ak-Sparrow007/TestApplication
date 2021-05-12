@@ -7,7 +7,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //This is greate
+        //You also have to add this one okay
 
-        //This is not a good way to write ankit
     }
 }
