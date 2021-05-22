@@ -28,7 +28,7 @@ class WaveView (context:Context, attributeSet: AttributeSet): View(context, attr
         canvas.save()
         canvas.clipPath(bezierPath)
         canvas.drawColor(Color.BLUE)
-        //adding new line // helo
+        //adding new line // hello add new user
         canvas.restore()
         canvas.drawCircle(100f, 100f, 50f, paint)
     }
