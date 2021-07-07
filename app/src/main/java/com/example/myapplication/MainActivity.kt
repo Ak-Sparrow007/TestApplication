@@ -2,17 +2,40 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import io.reactivex.Observable
+import io.reactivex.Observer
+import io.reactivex.disposables.Disposable
 
 class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //This is great ankit this second adding if i can make
-        //You also have to add this one okay
 
-        //This is great yess your are right
+        /**
+         * Basic observable
+         *
+         */
+        val observable = Observable.just(1,2,3)
+            .subscribe(object : Observer<Int> {
+                override fun onSubscribe(d: Disposable) {
+                    d.dispose()
+                }
 
-        //DO you know that we creating new amazing file
+                override fun onNext(t: Int) {
+
+                }
+
+                override fun onError(e: Throwable) {
+
+                }
+
+                override fun onComplete() {
+
+                }
+
+            })
 
     }
 }
